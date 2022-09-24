@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+    background-color: black;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 80%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #FFA500;
+    height: 6vh;
+    width: 100%;
+}
+
+nav .nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav ul li {
+    margin-top: 10px;
+    display: inline;
+    padding: 0px 12px;
+}
+
+.nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    background-color: #111;
+}
+
+h1,
+h3,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 650;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    padding-top: 65px;
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 4.0rem;
+    padding-top: 20px;
+}
+
+h5 {
+    font-size: 2.0rem;
+    padding: 30px 0;
+}
+
+#welcome-section {
+    
+    width: 100%;
+    height: 40vh;
+}
+
+#welcome-section p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+    color: #FFA500;
+}
+
+#intro {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #FFA500;
+    padding: 5px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 50px;
+    margin-bottom: 5rem;
+}
+
+.projects_img {
+    width: 100%;
+    height: calc(100% - 6.3rem);
+    object-fit: cover;
+}
+
+.project-title {
+    padding: 20px 0px;
+    /* background-color: ; */
+}
+
+.code {
+    color: #ffffff;
+    transition: color 0.3s ease-out;
+}
+
+#contact p {
+    color: #ffffff;
+}
+
+#profile-link {
+    padding-top: 30px;
+    margin: 30px;
+}
+
+section a {
+    color: #FFA500;
+}
+
+.fab {
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    color: #FFFFFF;
+    padding-top: 20px;
+    background-color: #000000;
+    border-top: 4px solid #FFA500;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-align: right;
+}
